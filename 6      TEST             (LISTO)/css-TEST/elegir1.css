@@ -1,0 +1,20 @@
+#image{
+    width: 400px;
+    height: 200px;
+}
+.btn{
+    color: #07c8be;
+	border: 2px solid #07c8be;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 5px 15px;
+    margin-left: 90px;
+}
+.btn:hover{
+	color: #fff;
+	background-color: #07c8be;
+}
+#image1{
+    width: 370px;
+    height: 200px;
+}

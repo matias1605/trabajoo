@@ -1,0 +1,144 @@
+:root {
+	--primario: #07c8be;
+}
+* {
+    box-sizing: border-box;
+}
+#name{
+    color: #07c8be;
+}
+#email{
+    color: #07c8be;
+}
+#phone{
+    color: #07c8be;
+}
+#affair{
+    color: #07c8be;
+}
+#message{
+    color: #07c8be;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+#logo{
+	height: 50px;
+	margin-top: 5px;
+}
+.d-flex,#btn{
+	margin-left: 20px;
+}
+#content{
+    font-family: 'Spartan',sans-serif;
+    max-width: 1400px;
+    line-height: 2.2em;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1.5em;
+}
+.logo {
+    text-align: center;
+    font-size: 3em;
+    margin-top: 80px;
+    margin-bottom: 20px;
+}
+
+/* COLOR TITULO DE COLOR */
+.logo span {
+    color: #07c8be;
+}
+/* COLOR TITULO DE COLOR */
+
+/* COLOR DEL FONDITO CELESTE */
+.contact-wrapper {
+    box-shadow: 0 0 40px 0 rgba(8, 193, 210, 0.409);
+}
+
+/* COLOR DEL FONDITO CELESTE */
+
+.contact-wrapper > * {
+    padding: 1em;
+}
+
+/* BLOQUE IZQUIERDO */
+.contact-form {
+    background: #2a2a2a;
+    color: #fff;
+}
+/* BLOQUE IZQUIERDO */
+
+.contact-form form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.contact-form form p {
+    margin: 0;
+    padding: 1em;
+}
+
+.contact-form form .block {
+    grid-column: 1 / 3;
+}
+.contact-form form button,
+.contact-form form input,
+.contact-form form textarea {
+    width: 100%;
+    padding: .7em;
+    border: none;
+    background: none;
+    outline: 0;
+    color: var(--primario);
+    border-bottom: 1px solid var(--primario);
+}
+
+#boton {
+    background:#75eae4;
+    border: 0;
+    text-transform: uppercase;
+    padding: 1em;
+}
+
+#boton:hover {
+    background-color: #75eae4ae;
+    transition: background-color 1s ease-out;
+    outline: 0;
+}
+
+/* BLOQUE DERECHO */
+.contact-info {
+    background: #07c8be;
+    color:#fff;
+}
+/* BLOQUE DERECHO */
+
+.contact-info h4, .contact-info p {
+
+    margin: 0 0 0.6rem 0;
+}
+
+
+
+/* BLOQUE DERECHO MARGENES */
+@media(min-width: 767px) {
+    body {
+        padding: 0 1em;
+    }
+    .contact-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+    }
+    .contact-wrapper > * {
+        padding: 2em;
+    }
+    .contact-info h4,
+    .contact-info p {
+        text-align: left;
+    }
+}
+/* BLOQUE DERECHO MARGENES */

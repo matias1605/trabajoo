@@ -1,0 +1,48 @@
+.hero{
+    background-image: url(https://s2.abcstatics.com/media/bienestar/2019/11/05/trastorno-afectivo-estacional-kSgF--620x349@abc.jpg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;    
+    z-index: 2;
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 6, 6, 0.733);
+    z-index: -1;
+}
+.text{
+    padding: 20px;
+}
+ul{
+    margin-left: 20px;
+}
+p{
+    padding: 2px;
+}
+#btn_Terminar{
+    margin-top: 30px;
+    margin-left: 20px;
+    padding: 10px;
+    width: 300px;
+    border-radius: 2rem;
+    background-color: #19bb8a;
+    border-color: #19bb8a;
+    color: #ffffff;
+    font-size: 20px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+#btn_Terminar:hover{
+    background-color: #0f815f;
+    border-color: #0f815f;
+    color: #ffffff;
+
+}

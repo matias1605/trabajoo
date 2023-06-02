@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente Limpia | Depresion Psicosocial</title>
+    <link rel="icon" href="mente limpia.png">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <!--//Bootstrap-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css-TEST/Depresión.css" type="text/css">
+    <!--//CSS-->
+
+    <!--Sweet Alert-->
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--//Sweet Alert-->
+
+</head>
+<body>
+    <!--Hero-->
+    <div class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                    <h1 class="display-4  text-white">Depreción Psicosocial</h1>
+                    <p class="text-white">«La depresión es una prisión en la que eres tanto el prisionero como el cruel carcelero.»</p>
+                    <p class="text-white">-Dorthy Rowe</p>        
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//Hero-->
+    <!--Container-->
+    <div class="container py-5">
+        <h2 class="title">Cuestionario</h2>
+        <div class="body">
+            <div class="card">
+                <div class="card-bod">
+                    <p class="text">
+                        El cuestionario consta de 21 preguntas, proporcionando un rango de puntuación entre 0 y 63. 
+                        Los puntos de corte sugeridos para interpretar el resultado obtenido son los siguientes:
+                    </p>
+                    <ul class="intrucciones">
+                        <li>00–21 - Depresión muy baja</li>
+                        <li>22–35 -  Depresión moderada</li>
+                        <li>más de 36 -  Depresión severa</li>
+                    </ul>
+                </div>
+                <p class="text">
+                    Cada ítem se puntúa de 0 a 3, correspondiendo la puntuación 0 a "en absoluto", 1 a "levemente, no me molesta mucho",
+                    2 a "moderadamente, fue muy desagradable pero podía soportarlo" y la puntuación 3 a "severamente, casi no podía soportarlo".
+                </p>        
+            </div>
+        </div>
+    <!--//Container-->
+
+    <!--Formulario -->
+        <form name="quiz" id="quiz" class="container py-5" method="post">
+            <div>
+                <p>1. Problemas de salud física</p>
+                <p><input type="radio" name="p1" value="r1" >No</p>
+                <p><input type="radio" name="p1" value="r2">Leve</p>
+                <p><input type="radio" name="p1" value="r3">Moderada</p>
+                <p><input type="radio" name="p1" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>2. Dificultades en las relaciones interpersonales</p>
+                <p><input type="radio" name="p2" value="r1">No</p>
+                <p><input type="radio" name="p2" value="r2">Leve</p>
+                <p><input type="radio" name="p2" value="r3">Moderada</p>
+                <p><input type="radio" name="p2" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>3. Problemas en el rendimiento académico o laboral</p>
+                <p><input type="radio" name="p3" value="r1">No</p>
+                <p><input type="radio" name="p3" value="r2">Leve</p>
+                <p><input type="radio" name="p3" value="r3">Moderada</p>
+                <p><input type="radio" name="p3" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>4. Pérdida de interés en actividades que antes disfrutaban</p>
+                <p><input type="radio" name="p4" value="r1">No</p>
+                <p><input type="radio" name="p4" value="r2">Leve</p>
+                <p><input type="radio" name="p4" value="r3">Moderada</p>
+                <p><input type="radio" name="p4" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>5. Problemas de sueño </p>
+                <p><input type="radio" name="p5" value="r1">No</p>
+                <p><input type="radio" name="p5" value="r2">Leve</p>
+                <p><input type="radio" name="p5" value="r3">Moderada</p>
+                <p><input type="radio" name="p5" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>6. Cambios en el apetito</p>
+                <p><input type="radio" name="p6" value="r1">No</p>
+                <p><input type="radio" name="p6" value="r2">Leve</p>
+                <p><input type="radio" name="p6" value="r3">Moderada</p>
+                <p><input type="radio" name="p6" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>7. Dificultades para tomar decisiones</p>
+                <p><input type="radio" name="p7" value="r1">No</p>
+                <p><input type="radio" name="p7" value="r2">Leve</p>
+                <p><input type="radio" name="p7" value="r3">Moderada</p>
+                <p><input type="radio" name="p7" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>8. Pérdida de autoestima</p>
+                <p><input type="radio" name="p8" value="r1">No</p>
+                <p><input type="radio" name="p8" value="r2">Leve</p>
+                <p><input type="radio" name="p8" value="r3">Moderada</p>
+                <p><input type="radio" name="p8" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>9. Sentimientos de culpa</p>
+                <p><input type="radio" name="p9" value="r1">No</p>
+                <p><input type="radio" name="p9" value="r2">Leve</p>
+                <p><input type="radio" name="p9" value="r3">Moderada</p>
+                <p><input type="radio" name="p9" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>10. Falta de concentración</p>
+                <p><input type="radio" name="p10" value="r1">No</p>
+                <p><input type="radio" name="p10" value="r2">Leve</p>
+                <p><input type="radio" name="p10" value="r3">Moderada</p>
+                <p><input type="radio" name="p10" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>11 Sentimientos de ansiedad</p>
+                <p><input type="radio" name="p11" value="r1">No</p>
+                <p><input type="radio" name="p11" value="r2">Leve</p>
+                <p><input type="radio" name="p11" value="r3">Moderada</p>
+                <p><input type="radio" name="p11" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>12. Sensación de estar atrapado</p>
+                <p><input type="radio" name="p12" value="r1">No</p>
+                <p><input type="radio" name="p12" value="r2">Leve</p>
+                <p><input type="radio" name="p12" value="r3">Moderada</p>
+                <p><input type="radio" name="p12" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>13. Dificultades financieras</p>
+                <p><input type="radio" name="p13" value="r1">No</p>
+                <p><input type="radio" name="p13" value="r2">Leve</p>
+                <p><input type="radio" name="p13" value="r3">Moderada</p>
+                <p><input type="radio" name="p13" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>14. Pensamientos negativos</p>
+                <p><input type="radio" name="p14" value="r1">No</p>
+                <p><input type="radio" name="p14" value="r2">Leve</p>
+                <p><input type="radio" name="p14" value="r3">Moderada</p>
+                <p><input type="radio" name="p14" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>15. Sensación de vacío</p>
+                <p><input type="radio" name="p15" value="r1">No</p>
+                <p><input type="radio" name="p15" value="r2">Leve</p>
+                <p><input type="radio" name="p15" value="r3">Moderada</p>
+                <p><input type="radio" name="p15" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>16. Sensación de soledad</p>
+                <p><input type="radio" name="p16" value="r1">No</p>
+                <p><input type="radio" name="p16" value="r2">Leve</p>
+                <p><input type="radio" name="p16" value="r3">Moderada</p>
+                <p><input type="radio" name="p16" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>17. Consumo de sustancias</p>
+                <p><input type="radio" name="p17" value="r1">No</p>
+                <p><input type="radio" name="p17" value="r2">Leve</p>
+                <p><input type="radio" name="p17" value="r3">Moderada</p>
+                <p><input type="radio" name="p17" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>18. Irritabilidad</p>
+                <p><input type="radio" name="p18" value="r1">No</p>
+                <p><input type="radio" name="p18" value="r2">Leve</p>
+                <p><input type="radio" name="p18" value="r3">Moderada</p>
+                <p><input type="radio" name="p18" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>19. Dificultad de Concentración</p>
+                <p><input type="radio" name="p19" value="r1">No</p>
+                <p><input type="radio" name="p19" value="r2">Leve</p>
+                <p><input type="radio" name="p19" value="r3">Moderada</p>
+                <p><input type="radio" name="p19" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>20. Fatiga crónica</p>
+                <p><input type="radio" name="p20" value="r1">No</p>
+                <p><input type="radio" name="p20" value="r2">Leve</p>
+                <p><input type="radio" name="p20" value="r3">Moderada</p>
+                <p><input type="radio" name="p20" value="r4">Bastante</p>
+                    
+            </div>
+            <div>
+                <p>21. Problemas de memoria</p>
+                <p><input type="radio" name="p21" value="r1">No</p>
+                <p><input type="radio" name="p21" value="r2">Leve</p>
+                <p><input type="radio" name="p21" value="r3">Moderada</p>
+                <p><input type="radio" name="p21" value="r4">Bastante</p>
+                    
+            </div>
+            <!--Boton terminar-->
+            <input type="button" name="" id="btn_Terminar" value="Terminar" onclick="check()">
+            <!--//Boton terminar-->
+        </form>
+    </div>
+    <!--//Formulario-->
+
+    <!--Script -->
+    <script src="js-TEST/ansiedad.js"></script>
+    <!--//Script-->
+
+    <!--Script Bootstrap-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+    <!--//Script Bootstrap-->
+</body>
+</html>

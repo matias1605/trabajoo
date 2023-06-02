@@ -1,0 +1,50 @@
+#image{
+    width: 200px;
+    height: 200px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+#btn_1, #btn_6{
+    color: #07c8be;
+	border: 2px solid #07c8be;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 5px 15px;
+    margin-left: 90px;
+}
+#btn_4{
+    color: #07c8be;
+	border: 2px solid #07c8be;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 5px 15px;
+}
+#btn_4{
+    float: right;
+}
+#btn_1:hover, #btn_4:hover, #btn_6:hover{
+	color: #fff;
+	background-color: #07c8be;
+}
+#btn_3{
+    color: #363636;
+	border: 2px solid #363636;
+	background-color: #fff;
+	border-radius: 6px;
+	padding: 5px 15px;
+}
+#btn_3:hover{
+	color: #fff;
+	background-color:  #363636;
+}
+#square1, #square2{
+    float: left;
+    margin-top: 2px;
+    margin:4px;
+}
+#square1{
+    color: #06992b;
+}
+#square2{
+    color: red;
+}

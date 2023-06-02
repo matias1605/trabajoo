@@ -1,0 +1,37 @@
+.hero{
+    background-image: url(../imagenes-TEST/tttttt.jpeg);
+    width: 100%;
+    height: 500px;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;    
+    z-index: 2;
+}
+.hero::after{
+    content: "";
+    width: 100%;
+    height: 500px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(7, 6, 6, 0.733);
+    z-index: -1;
+}
+#button-mayor, #button-menor, .btn{
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(3, 184, 129);
+    border: none;
+}
+#menor, #mayor{
+    text-decoration: none;
+    color: #fff;
+}
+#button-menor{
+    margin-left: 30px;
+}
+#button-mayor:hover, #button-menor:hover{
+    background-color: rgb(8, 0, 124);
+}
+

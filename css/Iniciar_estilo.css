@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+    }
+    ::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+    }
+:root {
+    --gris: #f2f2f2;
+    --dark-x: #1E2126; 
+    --light: #ffffff;
+}
+#cuenta{
+    padding-top: 10px;
+}
+#logo h1{
+    padding: 20px 30px;
+}
+#titulo{
+    padding: 30px;
+    padding-top: 10px;
+}
+#titulo h1{
+    padding-bottom: 5px;
+}
+#formLogin{
+    margin-bottom: 48px;
+}
+#email,#password{
+    background-color: var(--gris);
+    color: var(--dark-x);
+}
+#contra{
+    color: #000;
+    text-decoration: none;
+}
+#contra:hover{
+    text-decoration: underline;
+}
+body {
+    font-family: 'Spartan', sans-serif;
+    font-weight: 300;
+    background-color: var(--light);
+    max-height: 120%;
+}
+
+.text-light { 
+    color: var(--light) !important; 
+}
+.btn {
+    min-height: 3rem;
+    font-weight: 600;
+}
+
+.form-control {
+    min-height: 3rem;
+    line-height: initial;
+}
+.form-control:focus {
+    background-color: var(--dark-x);
+    outline: none;
+}
+
+.img-2 {
+    background-image: url('../img/imagen2.jpg');
+    background-size:cover;
+    background-position: center;
+}
+
+.img-1 {
+    background-image: url('../img/imagen1.jpg');
+    background-size:cover;
+    background-position: center;
+}
+.opciones{
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom:10px;
+}
+.opciones a{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opciones a:hover{
+    color: #232836;
+}
+.linea{
+    position: relative;
+    height: 1px;
+    width: 100%;
+    background-color: #d4d4d4;
+    margin: 20px 0;
+}
+.linea::before{
+    content: 'O';
+    position: absolute;
+    left: 50%;
+    background-color:#fff;
+    transform: translate(-50%,-50%);
+    padding: 0 10px;
+}
+.google{
+    color: #232836;
+    border: 2px solid #cacaca;
+    text-decoration: none;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 6px;
+}
+.img_google{
+    height: 30px;
+    margin-bottom: 5px;
+}

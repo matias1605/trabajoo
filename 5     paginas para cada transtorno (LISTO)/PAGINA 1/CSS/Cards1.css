@@ -1,0 +1,75 @@
+/*HOVER CARDS*/
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  
+  body{
+  
+    background: rgb(255, 255, 255);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.7em;
+    width: 80%;
+    margin: 0 auto;
+  }
+  
+  .card1{
+    color: black;
+    background: white ;
+    width: 270px;
+    margin: 10px;
+    border-radius: 15px;
+  }
+  
+  .card1-image{
+    height: 170px;
+    margin-bottom: 15px;
+    background-size: cover;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .car-1{
+    background-image: url(https://www.psiquiatriapsicologia-dexeus.com/IMAGES_12/mujer-agobiada.jpg);
+  }
+  
+  .car-2{
+    background-image: url(https://estaticos-cdn.prensaiberica.es/clip/21be1f69-c5ab-412e-ba4e-3c3a5f146125_16-9-discover-aspect-ratio_default_0.jpg);
+  }
+  
+  .car-3{
+    background-image: url(https://www.osakidetza.euskadi.eus/contenidos/informacion/osk_osaesk_trastorno_bipolar/es_def/images/osakidetza-salud-mental-trastorno-bipolar-que-es.png);
+  }
+  
+  .card p{
+    padding: 10px;
+  }
+  
+  .card h2{
+    padding: 10px;
+  }
+  
+  .card1 a {
+    background-color: black;
+    color: white;
+    padding: 15px 20px;
+    display: block;
+    text-align: center;
+    margin: 20px 50px;
+    text-decoration: none;
+  }
+  
+  .card1:hover {
+    background-color: rgb(62, 62, 62);
+    color: white;
+    cursor: pointer;
+    transform: scale(1.03);
+    transition: all is ease;
+  }
+  

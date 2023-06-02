@@ -1,0 +1,694 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: none;
+    text-decoration: none;
+}
+
+
+body {
+    background-color: white;
+}
+
+/*--Nav--*/
+
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/Inicio.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.menu {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+}
+
+.menu .logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: #07c8be;
+}
+
+.menu .navbar ul {
+    list-style: none;
+}
+
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #ffffff;
+    display: block;
+}
+
+.menu .navbar ul li a:hover {
+    color: #07c8be;
+}
+
+#menu{
+    display: none;
+}
+
+.menu label {
+    cursor: pointer;
+    display: none;
+}
+
+
+nav form {
+    display: flexbox;
+  }
+  
+  nav input[type="text"] {
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 5px;
+    margin-top: 10px;
+  }
+  
+  nav button[type="submit"] {
+    padding: 11px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    padding: 10.9px;
+  }
+  .navbar{
+    padding: 24.9px;
+  }
+/*--Nav--*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*--Panel--*/
+.header-text {
+    text-align: center;
+    width: 900px;
+}
+
+.header-text h1 {
+    color: #ffffff;
+    font-size: 55px;
+    margin-top: 70px;
+}
+
+.header-text h1 span {
+    color: #07c8be;
+    font-size: 55px;
+}
+
+.header-text p {
+    margin-top: 45px;
+    color: #ffffff;
+    text-transform: lowercase;
+}
+
+.btn-1{
+    display: inline-block;
+    background-color: #FFC107;
+    margin-top: 55px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: black;
+    width: 150px;
+    padding: 10px 10px;
+
+}
+
+.btn-1:hover {
+    background-color: #07c8be;
+}
+/*--Panel--*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*--Foto Fondo--*/
+
+h4{
+    color: #ffffff;
+    font-size: 39px;
+    }
+
+.bg-sec {
+    background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url(images/puños.jpeg) ;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 35px 0px;
+}
+
+.bg-txt {
+    padding: 100px 0px;
+    text-align: center;
+    color: white;
+}
+
+.bg-txt h2 {
+    font-size: 48px;
+    margin-bottom: 35px;
+}
+
+.bg-txt p {
+    font-size: 18px;
+    margin-bottom: 25px;
+    text-transform: none;
+}
+/*--Foto Fondo--*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+/*--Quienes Somos--*/
+
+h5{
+    color: black;
+    font-size: 33px;
+    }
+
+ul.about-content {
+	width: 100%;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.about-content li {
+	padding: 20px;
+	height: 500px;
+	background-clip: content-box;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center;
+}
+.about-left {
+	flex-basis: 30%;
+	background-image: url(images/medico-anota-diagnostico.jpg);
+}
+.about-right {
+	flex-basis: 70%;
+}
+.about-right h5 {
+	font-size: 35px;
+    text-transform: uppercase;
+}
+.about-area p {
+	max-width: 800px;
+	margin-bottom: 35px;
+	line-height: 1.5;
+	text-align: left;
+	padding-left: 0;
+    text-transform: none;
+}
+.section-title {
+	font-size: 50px;
+	margin-bottom: 5%;
+    font-size: 55px;
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+.section-title span {
+	color: #0aad8d;
+}
+.about-right h5 {
+	margin-bottom: 4%;
+}
+.services a{
+	text-decoration: none;
+}
+.tipo{
+	color: #000;
+}
+@media (max-width: 1000px) {
+	.section-title {
+		font-size: 35px;
+	}
+	.about-left, .about-right {
+		flex-basis: 100%;
+	}
+	.about-content li {
+		padding: 8px;
+	}
+}
+/*--Quienes Somos--*/
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*--Mision--*/
+
+h6{
+	text-align: center;
+}
+a{
+    text-decoration: none;
+}
+.wrapper{
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.services{
+    width: 1100px;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.single-img{
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: nowrap;
+    width: 325px;
+    height: 450px;
+    overflow: hidden;
+    box-shadow: 5px 5px 20px rgba(4, 165, 177, 0.3);
+    transform: translate(0, 0);
+    transition: .3s;
+}
+.single-img:hover{
+    transform: translate(0, -9px);
+}
+.img-one{
+    background-image: url(images/psicologia2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.img-two{
+    background-image: url(images/psicologia4.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.img-three{
+    background-image: url(images/psicologia2.jpg);
+    background-size: cover;
+    background-position: center center;
+}
+.img-text{
+    background: linear-gradient(to top,rgba(8, 246, 226, 0.9),rgba(252, 246, 246, 0.604));
+    padding: 0 10px 5px 10px;
+    width: 100%;
+    height: auto;
+    position: relative;
+    transform: translate(0, 110px);
+    line-height: 25px;
+    transition: 0.5s ease;
+    display: inline-block;
+    text-align: center;
+    color: #fff;
+}
+.img-text h4{
+    line-height: 15px;
+    padding: 0;
+    margin: 16px 0;
+    font-family: 'Alfa Slab One', cursive;
+    font-size: 25px;
+}
+
+.single-img:hover .img-text{
+    transform: translate(0, 0);
+}
+
+@media (max-width: 991px){
+    .wrapper{
+        padding: 0;
+    }
+    .services{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    a{
+        margin-bottom: 35px;
+    }
+}
+/*--Mision--*/
+
+
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+/*////////////////////////////////////////////////////////////////////////////////////////*/
+
+
+/*--Porque nos escogen nuestros pacientes--*/
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* Estilos generales */
+
+.contenedor,
+.wave-contenedor{
+    width: 90%;
+    max-width: 1000px;
+    overflow: hidden;
+    margin: auto;
+}
+.contenedor{
+    padding: 80px 0;
+}
+
+.titulo{
+    font-weight: 300;
+    font-size: 35px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.titulo.left{
+    text-align: left;
+}
+
+h2{
+color: #0aad8d;
+}
+
+/* Section */
+
+.parrafo{
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.btn-2{
+    display: inline-block;
+    background-color: #FFC107;
+    margin-top: 35px;
+    padding: 15px 25px;
+    border-radius: 15px;
+    color: black;
+    width: 130px;
+    padding: 10px 10px;
+    text-align: center;
+
+}
+/* info2 */
+
+.last-section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-bottom: 40px;
+}
+
+.last-section img{
+    width: 48%;
+}
+
+.last-section .contenedor-textos-main{
+    width: 40%;
+}
+/*--Porque nos escogen nuestros pacientes--*/
+
+/*FOOTER*/
+
+
+:root {
+    --color-neutral-0: #0e0c0c;
+    --color-neutral-10: #171717d6;
+    --color-neutral-30: #a8a29e;
+    --color-neutral-40: #07c8be;
+  
+  }
+  
+  * {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  main {
+    height: 70vh;
+  
+  }
+  
+  footer {
+    width: 100%;
+    color: var(--color-neutral-40);
+  }
+  
+  .footer-list h3{
+    font-size: 125%;
+  }
+  #footer_subscribe h3{
+    font-size: 125%;
+  }
+  
+  .footer-link {
+    text-decoration: none;
+  }
+  
+  #footer_content {
+    background-color: var(--color-neutral-10);
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 2.7rem 2.6rem;
+    gap: 1.5rem;
+  }
+  
+  #footer_contacts h1 {
+    margin-bottom: 0.65rem;
+    font-size: 125%;
+  }
+  #footer_contacts p{
+    width: 300px;
+  }
+  
+  .footer-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+    list-style: none;
+  }
+  
+  .footer-list .footer-link {
+    color: var(--color-neutral-30);
+    transition: all 0.4s;
+  }
+  
+  .footer-list .footer-link:hover {
+    color: #07c8be;
+  }
+  
+  #footer_subscribe {
+    display: flex;
+    flex-direction: column;
+    gap: 1.3rem;
+  }
+  #footer_contacts p{
+    color: #a8a29e;
+  margin: 5px;
+  
+  }
+  
+  #footer_subscribe p {
+    color: var(--color-neutral-30);
+    width: 270px;
+  }
+  
+  #input_group {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+  }
+  
+  #input_group input {
+    all: unset;
+    padding: 0.75rem;
+    width: 100%;
+  }
+  
+  #input_group button {
+    background-color: #07c8be;
+    border: none;
+    color: white;
+    padding: 0px 1.25rem;
+    font-size: 1.125rem;
+    height: 100%;
+    border-radius: 0px 4px 4px 0px;
+    cursor: pointer;
+    transition: all 0.4s;
+  }
+  
+  #input_group button:hover {
+    opacity: 0.8;
+  }
+  
+  #footer_copyright {
+    display: flex;
+    justify-content: center;
+    background-color: var(--color-neutral-0);
+    font-size: 0.9rem;
+    padding: 1.5rem;
+    font-weight: 100;
+  }
+  
+  @media screen and (max-width: 768px) {
+    #footer_content {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
+    }
+  }
+  
+  @media screen and (max-width: 426px) {
+    #footer_content {
+        grid-template-columns: repeat(1, 1fr);
+        padding: 3rem 2rem;
+    }
+  }
+  /*FOOTER*/
+  /*CARTAS*/
+  @import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Montserrat', sans-serif;
+  }
+  
+  .container-card{
+      width: 100%;
+      display: flex;
+      max-width: 1100px;
+      margin: auto;
+  }
+  .title-cards{
+      width: 100%;
+      max-width: 1080px;
+      margin: auto;
+      padding: 20px;
+      margin-top: 20px;
+      text-align: center;
+      color: #20c9c0;
+  }
+  .card{
+      width: 100%;
+      margin: 20px;
+      border-radius: 6px;
+      overflow: hidden;
+      background:#fff;
+      box-shadow: 0px 1px 10px rgba(2, 2, 2, 0.2);
+      transition: all 400ms ease-out;
+      cursor: default;
+  }
+  .card:hover{
+      box-shadow: 5px 5px 20px #20c9c0;
+      transform: translateY(-3%);
+  }
+  .card img{
+      width: 100%;
+      height: 210px;
+  }
+  .card .contenido-card{
+      padding: 15px;
+      text-align: center;
+  }
+  .card .contenido-card h3{
+      margin-bottom: 15px;
+      color: #7a7a7a;
+  }
+  .card .contenido-card p{
+      line-height: 1.8;
+      color: #6a6a6a;
+      font-size: 14px;
+      margin-bottom: 5px;
+  }
+
+@media only screen and (min-width:320px) and (max-width:768px){
+      .container-card{
+          flex-wrap: wrap;
+      }
+      .card{
+          margin: 15px;
+      }
+  }
+  /*Fin Cartas*/
+/*COMENTARIOS*/
+  .heading{
+    text-align: center;
+    padding: 1rem;
+    font-size: 50px;
+    color: darkslategrey;
+}
+.opiniones .caja-contenedor .caja{
+    background: white;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    position: relative;
+    border: .1rem solid rgba(0, 0, 0, 2);
+    box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    border-radius: .5rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-left: 350px;
+    margin-right: 350px;
+}
+.opiniones .caja-contenedor .caja .fa-atom{
+    position: absolute;
+    top: 1rem;
+    right: 2rem;
+    font-size: 8rem;
+    color: skyblue;
+    opacity: .3;
+
+}
+.opiniones .caja-contenedor .caja .user img{
+    border-radius: 50%;
+    object-fit: cover;
+    height: 4rem;
+    width: 4rem;
+    margin-top: 2rem;
+}
+.opiniones .caja-contenedor .caja .user h3{
+    color:teal;
+    font-size: 2rem;
+}
+.opiniones .caja-contenedor .caja .user .stars i{
+    color: gold;
+    font-size: 1.5rem;
+    padding: 1rem 0;
+}
+.opiniones .caja-contenedor .caja .comentarios{
+    color: #666;
+    font-size: 1rem;
+    padding: 1rem;
+
+}

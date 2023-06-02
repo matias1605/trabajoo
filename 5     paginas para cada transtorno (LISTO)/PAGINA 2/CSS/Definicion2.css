@@ -1,0 +1,23 @@
+.container{
+    display: flex;
+    justify-content: center;  
+    flex-wrap: wrap;
+
+    margin-top: 3em;
+    margin-bottom: 5em;
+    padding: 3em ;
+    border-radius: 15px;
+    color: #c8e8f1;
+    box-shadow: 0 2rem 1.3rem rgba(53, 165, 180, 0.2);
+    background: linear-gradient(180deg,#338b6a,#33a7bb);
+
+
+}
+
+.img-fluid{
+    width: 20em;
+    margin-top: 3em;
+    padding-bottom: 3em;
+    margin-right: 5px;
+    border-radius: 15px;
+}

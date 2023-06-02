@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mente Limpia | Agendar Cita</title>
+    <link rel="icon" href="mente limpia.png">
+
+    <!--Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" 
+    crossorigin="anonymous">
+    <!--//Bootstrap-->
+
+    <!--CSS-->
+    <link rel="stylesheet" href="css-TEST/agendarCita.css" type="text/css">
+    <!--//CSS-->
+
+
+    <!--Sweet Alert-->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <!--//Sweet Alert-->
+
+    <!--Css header-footer-->
+    <link rel="stylesheet" href="css-TEST/header-footer.css" type="text/css">
+    <!--//Css header-footer-->
+
+    <!--Fonts Awesome-->
+    <link rel="stylesheet" href="./Font Awesome/css/all.min.css">
+    <!--//Fonts Awesome-->    
+
+
+</head>
+<body>
+<!--Nav-->
+<nav id="nav" class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+  <div class="container">
+    <img src="mente limpia.png" alt="">
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="/www/index.html">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="/www/3    Conocenos (LISTO)/conocenos.html">Conocenos</a>
+        </li> 
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="/www/4     servicios      (LISTO)/servicios.html">Servicios</a>
+        </li> 
+        <li class="nav-item">
+          <a id="link" class="nav-link" href="/www/6      TEST             (LISTO)/Agendar Cita               primer paso 1.html">Agendar una cita</a>
+        </li>        
+      </ul>
+      <form class="d-flex" role="search">
+          <input id="search" class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+          <button id="btn" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
+<!--Nav-->      
+    
+    <!--Hero-->
+    <div class="hero d-flex align-items-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7 mx-auto text-center">
+                    <h1 class="display-4  text-white">Agendar Cita</h1>
+                    <p class="text-white">Agenda tu cita para recibir los mejores servicios de los mejores doctores especializados en la salud mental de La Marina</p>      
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--//Hero-->
+    <!--Formulario-->
+    <br><br>
+    <div class="container">
+        <form class="row g-3 needs-validation" novalidate>
+            <div class="col-md-12">
+                <label for="validationCustom01" class="form-label">Nombres y Apellidos el Paciente</label>
+                <input type="text" class="form-control" id="validationCustom01" required>
+                <div class="invalid-feedback">
+                    Falta completar
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Número telefónico</label>
+                <input type="text" class="form-control" id="validationCustom02"required>
+                <div class="invalid-feedback">
+                    Falta completar
+                </div>
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom04" class="form-label">Tipo de documento</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elegir</option>
+                  <option>DNI</option>
+                  <option>Carnet de extranjería</option>
+                </select>
+                <div class="invalid-feedback">
+                    Falta completar
+                </div> 
+              </div>
+              <div class="col-md-4">
+                <label for="validationCustom02" class="form-label">Número de documento</label>
+                <input type="text" class="form-control" id="validationCustom02"required>
+                <div class="invalid-feedback">
+                    Completado
+                </div>
+              </div>
+
+              <div class="col-md-12">
+                <label for="validationCustomUsername" class="form-label">Correo Electrónico del Paciente</label>
+                <div class="input-group has-validation">
+                  <span class="input-group-text" id="inputGroupPrepend">@</span>
+                  <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                  <div class="invalid-feedback">
+                    Falta completar
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom04" class="form-label">Distrito</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elegir</option>
+                  <option>Ancón</option>
+                  <option>Ate Vitarte</option>
+                  <option>Barranco</option>
+                  <option>Breña</option>
+                  <option>Carabayllo</option>
+                  <option>Chaclacayo</option>
+                  <option>Chorrillos</option>
+                  <option>Cieneguilla</option>
+                  <option>Comas</option>
+                  <option>El Agustino</option>
+                  <option>Independencia</option>
+                  <option>Jesús María</option>
+                  <option>La Molina</option>
+                  <option>La Victoria</option>
+                  <option>Lima</option>
+                  <option>Lince</option>
+                  <option>Los Olivos</option>
+                  <option>Lurigancho</option>
+                  <option>Lurín</option>
+                  <option>Magdalena del mar</option>
+                  <option>Miraflores</option>
+                  <option>Pachacamac</option>
+                  <option>Pucusana</option>
+                  <option>Pueblo Libre</option>
+                  <option>Puente Piedra</option>
+                  <option>Punta Hermosa</option>
+                  <option>Punta Negra</option>
+                  <option>Rímac</option>
+                  <option>San Bartolo</option>
+                  <option>San Borja</option>
+                  <option>San Isidro</option>
+                  <option>San Juan de Lurigancho</option>
+                  <option>San Juan de Miraflores</option>
+                  <option>San Luis</option>
+                  <option>San Martín de Porres</option>
+                  <option>San Miguel</option>
+                  <option>Santa Anita</option>
+                  <option>Santa María del Mar</option>
+                  <option>Santa Rosa</option>
+                  <option>Santiago de Surco</option>
+                  <option>Surquillo</option>
+                  <option>Villa El Salvador</option>
+                  <option>Villa María del Triunfo</option>
+                </select>
+                <div class="invalid-feedback">
+                  Falta Completar
+                </div>
+              </div>
+              <div class="col-md-6">
+                <label for="validationCustom02" class="form-label">Dirección de casa</label>
+                <input type="text" class="form-control" id="validationCustom02"required>
+                <div class="invalid-feedback">
+                    Falta completar
+                </div>
+              </div>
+              <div class="col-md-12">
+                <label for="validationCustom04" class="form-label">Es la primera vez que usas nuestros servicios</label>
+                <select class="form-select" id="validationCustom04" required>
+                  <option selected disabled value="">Elegir</option>
+                  <option>Si, soy paciente por primera vez</option>
+                  <option>No, ya soy paciente frecuente</option>
+                </select>
+                <div class="invalid-feedback">
+                  Falta Completar
+                </div>
+              </div>
+              <div class="col-12">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                  <label class="form-check-label" for="invalidCheck">
+                    Acepto las condiciones
+                  </label>
+                  <div class="invalid-feedback">
+                    Falta marcar
+                  </div>
+                </div>
+              </div>
+              <div class="col-12">
+                <button class="btn">Siguiente</button>
+              </div>
+        </form>
+    </div>
+    <!--//Formulario-->
+    <!-- Pie de pagina -->
+    <footer class="bg-light text-dark pt-5 pb-4">
+      <div class="container text-left text-md-left">
+          <div class="row text-left text-md-left">
+              <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 id="titulo_hd" class="text-uppercase mb-4 fw-bold">Sobre Nosotros</h5>
+                  <hr class="mb-4">
+                  <p>Somos un centro especializado en salud mental digital, teniendo como finalidad brindar un servicio de calidad a las personas con diagnósticos de Ansiedad, Depresión, Dependencia, Estrés Postraumático, TDAH, Transtorno Bipolar, bullying escolar y trasntornos alimenticios en jovenes.</p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                  <h5 id="titulo_hd" class="text-uppercase mb-4 fw-bold">Centro de ayuda</h5>
+                  <hr class="mb-4">
+                  <p>
+                    <a href="/www/contactanos     footer/contactanos.html" class="text-dark" style="text-decoration:none;">Contáctanos</a>
+                  </p>
+                  <p>
+                    <a href="../Iniciar_Sesion/Ayuda/ayuda.html" class="text-dark" style="text-decoration:none;">Ayuda</a>
+                  </p>
+                  <p>
+                    <a href="/www/4     servicios      (LISTO)/servicios.html" class="text-dark" style="text-decoration:none;">Servicios</a>
+                  </p>
+              </div>
+              <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                <h5 id="titulo_hd" class="text-uppercase mb-4 fw-bold">Términos legales</h5>
+                <hr class="mb-4">
+                <p>
+                  <a href="../pagina de terminos y condiciones/index.html" class="text-dark" style="text-decoration:none;">Politica y privacidad</a>
+                </p>
+                <p>
+                  <a href="../Iniciar_Sesion/reclamos/libro_reclamos.html" class="text-dark" style="text-decoration:none;">Reportar abuso</a>
+                </p>
+              </div>
+              <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                  <h5 id="titulo_hd" class="text-uppercase mb-4 fw-bold">Información de contacto</h5>
+                  <hr class="mb-4">
+                  <p>
+                     Av. La República 234, Surco.
+                  </p>
+                  <p>
+                     centralsalud@gmail.com
+                  <p>
+                    +51 902 368 688
+                  </p>
+              </div>
+              <hr class="mb-4">
+              <div class="row d-flex justify-content-center text-center">
+                  <div>
+                      <p>
+                          Copyright 2022 All Rights Reserved By:
+                        <a href="#" style="text-decoration: none;"><strong style="color: #07c8be;">MenteLimpia</strong>
+                        </a>
+                      </p>
+                  </div>
+              </div>
+              <div class="row d-flex justify-content-center">
+                  <div class="text-center">
+                    <ul class="list-unstyled list-inline">
+                        <li class="list-inline-item">
+                            <a href="#" class="text-dark"><i class=""></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-dark"><i class=""></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-dark"><i class=""></i></a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" class="text-dark"><i class=""></i></a>
+                        </li>
+                    </ul>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </footer>
+          <!--//Pie de página-->    
+    
+    <!--Script -->
+    <script src="js-TEST/agendarcita.js"></script>
+    <!--//Script-->
+
+    <!--Script Bootstrap-->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+    crossorigin="anonymous"></script>
+
+    <!--//Script Bootstrap-->
+    
+</body>
+</html>

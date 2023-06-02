@@ -1,0 +1,103 @@
+/*seccion de prevencion*/
+
+#p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+}
+.titulos .p {
+    margin-bottom: 40px;
+    font-size: 18px;
+    color: #fff;
+    padding: 10px;
+}
+.titulos {
+    padding-bottom: 3em;
+    margin-bottom: 40px;
+    font-size: 60px;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #fff;
+    padding: 10px;
+}
+.content {
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contenidoPrevencion  {
+    padding: 30px;
+    background: #1f1d1d;
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.7em;
+    width: 80%;
+    margin: 0 auto;
+    border-radius: 2em;
+
+}
+
+
+.box-contenedor {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 1.7em;
+    width: 80%;
+    margin: 0 auto;
+}
+
+.box-contenedor .caja {
+    width: 50rem;
+    background: #101010;
+    text-align: center;
+    border-radius: 1rem;
+    box-shadow: 0 .3rem 5rem rgba(68, 181, 209, 0.5);
+    margin: 5rem;   
+    
+}
+
+.box-contenedor .caja i {
+    height: 3rem;
+    width: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    border-radius: 50%;
+    color: #fff;
+    background: #b65443;
+    font-size: 2rem;
+    margin: 1rem 0;
+
+}
+
+.box-contenedor  .caja h3 {
+    font-size: 20px;
+    color: #43b69d;
+
+}
+
+.box-contenedor  .caja #p {
+    padding: 0 15px;
+    font-size: 16px;
+}
+
+@media (max-width: 768px) {
+
+    .titulos {
+        margin: 3em;
+        font-size: 40px;
+    }
+
+
+
+}

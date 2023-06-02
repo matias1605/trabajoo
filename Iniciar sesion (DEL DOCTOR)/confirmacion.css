@@ -1,0 +1,60 @@
+body{
+    background: linear-gradient(90deg,rgb(250, 223, 228),white,white, skyblue);
+    background-size: 120% 200%;
+    background-repeat: no-repeat;
+}    
+h1{
+    text-align: center;
+    margin-top: 20px;
+    font-family: cursive;
+}
+.subir{
+    text-align: right;
+    position: relative;
+    top: 50%;
+    /* left: 60%; */
+    width: 310px;
+    height: 310px;
+    margin-top: 250px;
+}
+.subir #img{
+    border-radius: 50%;
+    margin-top: -180px;
+    margin-bottom: 50px;
+    margin-left: -59px;
+    border: solid 3px black;
+}
+
+.subir input{
+    display: none;
+}
+.subir label{
+    cursor: pointer;
+    color: grey;
+    border: 2px solid gray;
+    border-radius: 50px;
+    padding: 12px;
+    font-weight: 600;
+    background-color: white;
+    font-family: Arial;
+    color: grey;
+    font-weight: 600;
+    margin-right: 100px;
+}
+.subir :hover{
+    border-color: cyan;
+    background-color: lightcyan;
+}
+.omitir{
+    text-decoration: none;
+    color: blue;
+    text-align: right;
+    margin-top: -20px;
+}
+.atras{
+    text-decoration: none;
+    color: blue;
+    text-align: left;
+    margin-top: -20px;  
+}
+

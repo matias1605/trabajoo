@@ -1,0 +1,31 @@
+body{
+    background: linear-gradient(90deg,rgb(251, 216, 222),white,white, skyblue);
+    background-size: 120% 200%;
+    background-repeat: no-repeat;
+}    
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 50px;
+    background-color: white;
+    border-radius: 60px;
+    margin-top: -20px;
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  #errorContrasena {
+    margin-top: 10px;
+  }
+.registro{
+    text-align: center;
+}
+.atras{
+    text-decoration: none;
+    color: blue;
+    text-align: right;
+    margin-top: -20px;
+}
